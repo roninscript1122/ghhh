@@ -1,4 +1,8 @@
-function player_info(player)
-    outputChatBox("สำเร็จ", player, 255, 255, 0, true)
+function consoleCreateMarker ( playerSource, commandName )
+	if ( playerSource ) then
+		local x, y, z = getElementPosition ( playerSource )
+		createMarker ( x, y, z, "checkpoint", 2, 255, 0, 0, 255 )
+		outputChatBox ( "You got a red marker", playerSource )
+	end
 end
-addCommandHandler("info", player_info)
+addCommandHandler ( "createmarker", consoleCreateMarker )

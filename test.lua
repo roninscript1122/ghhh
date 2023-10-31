@@ -5,4 +5,4 @@ function consoleCreateMarker ( playerSource, commandName )
 		outputChatBox ( "สร้างวงเเล้ว KimKie", playerSource )
 	end
 end
-addCommandHandler ( "createmarker", consoleCreateMarker )
+addCommandHandler ( "cm", consoleCreateMarker )
